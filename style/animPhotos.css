@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100%;
+}
+
+html{
+    height: 100%;
+    background-color: bisque;
+}
+
+h1{
+    margin: 50px 0;
+    font-size: 50px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes pictureCalc {
+    from{
+        transform: rotate(-45deg) translateY(600px);
+    }
+    to{
+        transform: rotate(-45deg) translateY(0);
+    }
+}
+
+.photosContainer img:nth-child(1){
+    animation: pictureCalc 2s linear 1 forwards;
+    width: 128px; 
+}
+
+@keyframes pictureBook {
+    from{
+        transform: rotate(-15deg) translateY(600px);
+    }
+    to{
+        transform: rotate(-15deg) translateY(0);
+    }
+}
+
+.photosContainer img:nth-child(2){
+    animation: pictureBook 2s linear 0.5s 1 forwards;
+}
+
+@keyframes picturePaper {
+    from{
+        transform: rotate(15deg) translateY(600px);
+    }
+    to{
+        transform: rotate(15deg) translateY(0);
+    }
+}
+
+.photosContainer img:nth-child(3){
+    animation: picturePaper 2s linear 1s forwards;
+}
+
+@keyframes picturPallete {
+    from{
+        transform: rotate(45deg) translateY(600px);
+    }
+    to{
+        transform: rotate(45deg) translateY(0);
+    }
+}
+
+.photosContainer img:nth-child(4){
+    animation: picturPallete 2s linear 1.5s forwards;
+    width: 128px; 
+}
+
+@keyframes picturePencil {
+    from{
+        transform: rotate(90deg) translateX(400px);
+    }
+    to{
+        transform: rotate(90deg) translateX(0);
+    }
+}
+
+.photoContainer img{
+    animation: picturePencil 2s linear 2s forwards;
+}
+
+.photoContainer, .photosContainer{
+    text-align: center;
+}
+
+.photosContainer img{
+    transform-origin: 50% 600px;
+}
